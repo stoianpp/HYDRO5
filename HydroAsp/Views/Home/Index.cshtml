@@ -1,4 +1,7 @@
-﻿    <!-- PRELOADER -->
+﻿@using System.Globalization
+@using System.Threading;
+@using HydroAsp.LocalResource;
+<!-- PRELOADER -->
 <div class="spn_hol">
     <div class="spinner">
         <div class="bounce1"></div>
@@ -30,6 +33,13 @@
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-left" style="padding-left: 20px">
+                        @{
+                            CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
+                            <li><a href="/Home/ChangeCurrentCulture/0"><img src="images/UK.png" /> En</a></li>
+                            <li><a href="/Home/ChangeCurrentCulture/1"><img src="images/BG.png" /> Bg</a></li>
+                        }
+                    </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <!-- NAV -->
                         <li><a href="#HOME">HOME</a> </li>
@@ -59,7 +69,7 @@
                     <div class="home_text">
                         <!-- TITLE AND DESC -->
                         <h1>Connect the unexpected</h1>
-                        <p>Try it for free</p>
+                        <p>@Resource.TryForFree</p>
 
                         <div class="download-btn">
                             <!-- BUTTON -->
