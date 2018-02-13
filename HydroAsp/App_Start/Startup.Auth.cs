@@ -54,9 +54,9 @@ namespace HydroAsp
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "203770013541083",
+               appSecret: "dcfd33ae851f589512cbc1f28281f6cf");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
