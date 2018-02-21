@@ -20,7 +20,7 @@ namespace HydroAsp
                         "~/Scripts/smoothscroll.js",
                         "~/Scripts/jquery.parallax-1.1.3.js",
                         "~/Scripts/jquery.prettyPhoto.js",
-                        "~/Scripts/jjquery.ajaxchimp.min.js",
+                        "~/Scripts/jquery.ajaxchimp.min.js",
                         "~/Scripts/jquery.ajaxchimp.langs.js",
                         "~/Scripts/wow.min.js",
                         "~/Scripts/waypoints.min.js",

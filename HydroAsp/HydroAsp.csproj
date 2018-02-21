@@ -224,6 +224,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="images\hydro_features.png" />
     <Content Include="Content\owl.carousel.css" />
     <Content Include="Content\owl.theme.css" />
     <Content Include="Content\Pe-icon-7-stroke.css" />
@@ -239,6 +240,7 @@
     <Content Include="images\BG.png" />
     <Content Include="images\blade.jpg" />
     <Content Include="images\blade.png" />
+    <Content Include="images\blade2.png" />
     <Content Include="images\home.jpg" />
     <Content Include="images\home.png" />
     <Content Include="images\home2.jpg" />
@@ -249,6 +251,11 @@
     <Content Include="images\logo3.png" />
     <Content Include="images\movie.mp4" />
     <Content Include="images\newBack.jpg" />
+    <Content Include="images\pic1.png" />
+    <Content Include="images\pic2.png" />
+    <Content Include="images\pic3.png" />
+    <Content Include="images\pic4.png" />
+    <Content Include="images\pic5.png" />
     <Content Include="images\razor1.png" />
     <Content Include="images\razor2.png" />
     <Content Include="images\razor3.png" />
@@ -266,6 +273,7 @@
     <Content Include="fonts\Pe-icon-7-stroke.eot" />
     <Content Include="fonts\Pe-icon-7-stroke.ttf" />
     <Content Include="fonts\Pe-icon-7-stroke.woff" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

@@ -28,7 +28,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <img src="images/logo.png" alt="Logo">
+                        <img src="images/logo3.png" alt="Logo">
                     </a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -36,16 +36,25 @@
                     <ul class="nav navbar-nav navbar-left" style="padding-left: 20px">
                         @{
                             CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
+
+                            <!--
                             <li><a href="/Home/ChangeCurrentCulture/0"><img src="images/UK.png" /> En</a></li>
-                            <li><a href="/Home/ChangeCurrentCulture/1"><img src="images/BG.png" /> Bg</a></li>
+                            <li><a href="/Home/ChangeCurrentCulture/1"><img src="images/BG.png" /> Bg</a></li>-->
                         }
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Language<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="/Home/ChangeCurrentCulture/0" class="language" rel="en-US"><img src="images/UK.png" alt="English" /> En</a></li>
+                                <li><a href="/Home/ChangeCurrentCulture/1" class="language" rel="bg-BG"><img src="images/BG.png" alt="Bulgarian" /> Bg</a></li>
+                            </ul>
+                        </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <!-- NAV -->
                         <li><a href="#HOME">HOME</a> </li>
                         <li><a href="#ABOUT">CONDITIONS </a> </li>
                         <li><a href="#FEATURES">FEATURES</a></li>
-                        <li><a href="#SCREENS">COMPATIBILITY</a> </li>
+                        <li><a href="#PRODUCT">PRODUCT</a> </li>
                         <!--<li><a href="#DOWNLOAD">DOWNLOAD </a> </li>-->
                         <li><a href="#CONTACT">SAMPLE </a> </li>
                     </ul>
@@ -232,7 +241,7 @@
                 <div class="col-md-4">
                     <div class="feature_iphone">
                         <!-- FEATURE PHONE IMAGE -->
-                        <img class="wow bounceIn" data-wow-duration="1s" src="images/hydro_features.jpg" alt="">
+                        <img class="wow bounceIn" data-wow-duration="1s" src="images/hydro_features.png" alt="">
                     </div>
                 </div>
                 <div class="col-md-4 left_no_padding wow fadeInRight" data-wow-duration="1s">
@@ -282,7 +291,7 @@
 <!-- =========================
      Start APPS SCREEN SECTION
 ============================== -->
-<section class="apps_screen page" id="SCREENS">
+<section class="apps_screen page" id="PRODUCT">
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1 wow fadeInBig" data-wow-duration="1s">
@@ -297,27 +306,27 @@
     </div>
 
     <div class="screen_slider">
-        <div id="demo" class="wow bounceInRight" data-wow-duration="1s">
+        <div id="demo" class="wow bounceInRight" data-wow-duration="2s">
             <div id="owl-demo" class="owl-carousel">
 
                 <!-- APPS SCREEN IMAGES -->
                 <div class="item">
-                    <img src="images/razor1.png" width="60" height="60" alt="APPS SCREEN" />
+                    <img src="images/pic2.png" width="50" height="50" alt="Hydro" />
                 </div>
                 <div class="item">
-                    <img src="images/razor2.png" width="60" height="60" alt="APPS SCREEN" />
+                    <img src="images/pic1.png" width="50" height="50" alt="Hydro" />
                 </div>
                 <div class="item">
-                    <img src="images/razor3.png" width="60" height="60" alt="APPS SCREEN" />
+                    <img src="images/pic3.png" width="50" height="50" alt="Hydro" />
                 </div>
                 <div class="item">
-                    <img src="images/razor1.png" width="60" height="60" alt="APPS SCREEN" />
+                    <img src="images/pic1.png" width="50" height="50" alt="Hydro" />
                 </div>
                 <div class="item">
-                    <img src="images/razor2.png" width="60" height="60" alt="APPS SCREEN" />
+                    <img src="images/pic5.png" width="50" height="50" alt="Hydro" />
                 </div>
                 <div class="item">
-                    <img src="images/razor3.png" width="60" height="60" alt="APPS SCREEN" />
+                    <img src="images/pic4.png" width="50" height="50" alt="Hydro" />
                 </div>
             </div>
         </div>
