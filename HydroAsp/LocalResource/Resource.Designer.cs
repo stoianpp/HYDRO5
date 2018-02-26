@@ -61,11 +61,38 @@ namespace HydroAsp.LocalResource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TryTest.
+        ///   Looks up a localized string similar to Bulgarian.
         /// </summary>
-        public static string TryForFree {
+        public static string Bg {
             get {
-                return ResourceManager.GetString("TryForFree", resourceCulture);
+                return ResourceManager.GetString("Bg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to English.
+        /// </summary>
+        public static string En {
+            get {
+                return ResourceManager.GetString("En", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to СЪВМЕСТИМИ С FUSION®† ДРЪЖКИ**.
+        /// </summary>
+        public static string FitsFusionHandle {
+            get {
+                return ResourceManager.GetString("FitsFusionHandle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Language.
+        /// </summary>
+        public static string Language {
+            get {
+                return ResourceManager.GetString("Language", resourceCulture);
             }
         }
     }

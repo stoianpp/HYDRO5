@@ -12,46 +12,65 @@ $(document).ready(function() {
 
     "use strict";
     
-    $(window).scroll(function() {
+    //if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        $(window).scroll(function() {
 
-        "use strict";
-        
-        if ($(window).scrollTop() > 80) {
-            $(".navbar").css({
-                'margin-top': '0px',
-                'opacity': '1'
-            })
-            $(".navbar-nav>li>a").css({
-                'padding-top': '15px'
-            });
-            $(".navbar-brand img").css({
-                'height': '35px'
-            });
-            $(".navbar-brand img").css({
-                'padding-top': '0px'
-            });
-            $(".navbar-default").css({
-                'background-color': 'rgba(59, 59, 59, 0.7)'
-            });
-        } else {
-            $(".navbar").css({
-                'margin-top': '-100px',
-                'opacity': '0'
-            })
-            $(".navbar-nav>li>a").css({
-                'padding-top': '45px'
-            });
-            $(".navbar-brand img").css({
-                'height': '45px'
-            });
-            $(".navbar-brand img").css({
-                'padding-top': '20px'
-            });
-            $(".navbar-default").css({
-                'background-color': 'rgba(59, 59, 59, 0)'
-            });
-        }
-    });
+            "use strict";
+            if ($(window).scrollTop() > 80) {
+                $(".navbar").css({
+                    'margin-top': '0px',
+                    'opacity': '1'
+                })
+                $(".navbar-nav>li>a").css({
+                    'padding-top': '15px'
+                });
+                $(".navbar-brand img").css({
+                    'height': '35px'
+                });
+                $(".navbar-brand img").css({
+                    'padding-top': '0px'
+                });
+                $(".navbar-default").css({
+                    'background-color': 'rgba(59, 59, 59, 0.7)'
+                });
+            } else {
+                $(".navbar").css({
+                    'margin-top': '-100px',
+                    'opacity': '0'
+                })
+                $(".navbar-nav>li>a").css({
+                    'padding-top': '45px'
+                });
+                $(".navbar-brand img").css({
+                    'height': '45px'
+                });
+                $(".navbar-brand img").css({
+                    'padding-top': '20px'
+                });
+                $(".navbar-default").css({
+                    'background-color': 'rgba(59, 59, 59, 0)'
+                });
+            }
+        });
+    /*} else {
+
+        $(".navbar").css({
+            'margin-top': '0px',
+            'opacity': '1'
+        })
+        $(".navbar-nav>li>a").css({
+            'padding-top': '15px'
+        });
+        $(".navbar-brand img").css({
+            'height': '35px'
+        });
+        $(".navbar-brand img").css({
+            'padding-top': '0px'
+        });
+        $(".navbar-default").css({
+            'background-color': 'rgba(59, 59, 59, 0.7)'
+        });
+    }*/
 });
 
 
@@ -230,7 +249,15 @@ $(document).ready(function() {
         var emaild = $("#email").val();
         var subject = $("#subject").val();
         var message = $("#message").val();
+        var policy = $("#policy").prop( "checked");
+        console.log(policy);
         var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+        if (!policy) {
+            $(".form_error .policy_error").addClass("show").removeClass("hide");
+            return false;
+        } else {
+            $(".form_error .polic_error").addClass("hide").removeClass("show");
+        }
         if (!name) {
             $(".form_error .name_error").addClass("show").removeClass("hide");
             return false;
@@ -255,7 +282,7 @@ $(document).ready(function() {
         } else {
             $(".form_error .message_error").addClass("hide").removeClass("show");
         }
-        if (name && emaild && message) {
+        if (name && emaild && message && policy) {
             $.ajax({
                 url: 'contact.php',
                 data: {
@@ -317,7 +344,7 @@ $(document).ready(function() {
 
 
 //VIDEO BACKGROUND
-$(document).ready(function() {
+/*$(document).ready(function() {
   var videobackground = new $.backgroundVideo($('body'), {
     "align": "centerXY",
     "width": 1280,
@@ -326,4 +353,4 @@ $(document).ready(function() {
     "filename": "cloud",
     "types": ["mp4","ogg","webm"]
   });
-});
+});*/

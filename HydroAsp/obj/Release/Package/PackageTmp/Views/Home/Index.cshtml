@@ -17,7 +17,7 @@
 <section class="header parallax home-parallax page" id="HOME">
     <h2></h2>
     <div class="section_overlay">
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <nav class="navbar navbar-default navbar-fixed-top" id="nav-style" role="navigation">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -28,7 +28,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <img src="images/logo.png" alt="Logo">
+                        <img src="images/logo3.png" alt="Logo">
                     </a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -36,16 +36,26 @@
                     <ul class="nav navbar-nav navbar-left" style="padding-left: 20px">
                         @{
                             CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
-                            <li><a href="/Home/ChangeCurrentCulture/0"><img src="images/UK.png" /> En</a></li>
-                            <li><a href="/Home/ChangeCurrentCulture/1"><img src="images/BG.png" /> Bg</a></li>
+
+                            <!--<li><a href="/Home/ChangeCurrentCulture/0"><img src="images/UK.png" /> En</a></li>
+                                <li><a href="/Home/ChangeCurrentCulture/1"><img src="images/BG.png" /> Bg</a></li>-->
                         }
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">@Resource.Language<span class="caret"></span></a>
+                            <ul class="dropdown-menu transparent-lang" role="menu">
+                                <li><a href="/Home/ChangeCurrentCulture/0" class="language" rel="en-US"><img src="images/UK.png" alt="English" /> @Resource.En</a></li>
+                                <li><a href="/Home/ChangeCurrentCulture/1" class="language" rel="bg-BG"><img src="images/BG.png" alt="Bulgarian" /> @Resource.Bg</a></li>
+                            </ul>
+                        </li>
+                        <!--<li><a href="#"><img src="images/UK.png" /> En</a></li>
+                        <li><a href="#"><img src="images/BG.png" /> Bg</a></li>-->
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <!-- NAV -->
                         <li><a href="#HOME">HOME</a> </li>
-                        <li><a href="#ABOUT">CONDITIONS </a> </li>
                         <li><a href="#FEATURES">FEATURES</a></li>
-                        <li><a href="#SCREENS">COMPATIBILITY</a> </li>
+                        <li><a href="#PRODUCT">PRODUCT</a> </li>
+                        <li><a href="#CONDITIONS">CONDITIONS </a> </li>
                         <!--<li><a href="#DOWNLOAD">DOWNLOAD </a> </li>-->
                         <li><a href="#CONTACT">SAMPLE </a> </li>
                     </ul>
@@ -54,136 +64,52 @@
             </div>
             <!-- /.container- -->
         </nav>
-
+        </div>
         <div class="container home-container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="logo text-center">
-                        <!-- LOGO -->
-                        <img width="125" height="55" src="images/logo3.png" alt="">
+                        <br>
+                        <img width="268" height="156" src="images/SWSlogo.png" alt="">
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-8 col-sm-8">
+            <div class="row back-color-sm">
+                <div class="col-md-7 col-sm-7">
                     <div class="home_text">
                         <!-- TITLE AND DESC -->
-                        <h1>Connect the unexpected</h1>
-                        <p>@Resource.TryForFree</p>
+                        <p class="land-header-text inner-line">Upgrade to GEL HYDRATION<br>to hydrate skin throughout each shave</p>
+                        <p style="margin-top: 25px; text-align: justify;">Did you know that the new Wilkinson Sword Hydro Connect™ 5 cartridge is compatible with all Fusion®† and Wilkinson Sword Hydro Connect™ 5 branded handles? This gives you the freedom to choose what blades to use with your preffered razor before you decide to change it.<br>Now we give you the opportunity to receive a FREE SAMPLE so you can test all the benefits of Wilkinson Sword Hydro Connect™ 5 blades on your own skin! </p>
+                        <p style="font-size: 16px; line-height: 20px !important; margin-top: 20px">FIND OUT HOW TO GET YOUR FREE SAMPLE BELOW.<br>DON'T LET THEM TELL YOU WHAT IS THE BEST A MAN CAN GET - CHOOSE YOURSELF!</p>
 
                         <div class="download-btn">
-                            <!-- BUTTON -->
-                            <a class="btn home-btn wow fadeInLeft" href="#CONTACT">Sample request</a>
-                            <a class="tuor btn wow fadeInRight" href="#ABOUT">Sample Conditions<i class="fa fa-angle-down"></i></a>
+                            <a class="btn home-btn wow fadeInLeft" href="#CONDITIONS">CHECK THE CONDITIONS</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-md-offset-1 col-sm-4">
-                    <div class="home-iphone">
-                        <img src="images/home.jpg" alt="">
+                <div class="col-md-5 col-sm-5 back-color-sm">
+                    <div class="row uplift">
+                        <div class="col-md-5 col-md-offset-3">
+                            <img class="handle-image" src="images/Handle.png" alt="">
+                            <div>
+                            </div>
+                        </div>
+                        <div class="col-md-offset-2">
+                            <p class="fits_text"><br>FITS FUSION®† HANDLES**</p>
+                        </div>
+                        <div>
+                            <p class="connect">CONNECT THE UNEXPECTED</p>
+                        </div>
+                        <div>
+                            <img src="images/text.png" style="margin-top: 15px; width: 100%" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 </section>
 
 <!-- END HEADER SECTION -->
-<!-- =========================
-     START ABOUT US SECTION
-============================== -->
-
-
-<section class="about page" id="ABOUT">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <!-- ABOUT US SECTION TITLE-->
-                <div class="section_title">
-                    <h2>Conditions For Free Hydro Connect5&trade; Blade Sampling</h2>
-                    <p>We would like to give you the chance for trying Hydro Connect5&trade; free of any cost, so that you can personally experience its features and beneits. Delivered right to your door. There are just 3 conditions you should cover.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="inner_about_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="about_phone wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
-                        <!-- PHONE -->
-                        <img src="images/blade.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-6  wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
-                    <!-- TITLE -->
-                    <!--<div class="inner_about_title">
-                        <h2>Conditions for free sampling</h2>
-                        <p>You have to comply with the following 3 conditions to get absolutely free Hydro Connect5&trade; blade sample delivered right to your door.</p>
-                    </div>
-                    <div class="inner_about_desc">
-
-                        <!-- SINGLE DESC -->
-                    <div class="single_about_area fadeInUp wow" data-wow-duration=".5s" data-wow-delay="1s">
-                        <!-- ICON -->
-                        <div><i class="pe-7s-link"></i></div>
-                        <!-- HEADING DESCRIPTION -->
-                        <h3>Possess compatible with Hydro Connect5&trade; handle</h3>
-                        <p>In order to make use of our free gift you will need compatible handle - GILLETTE® FUSION®† or WILKINSON SWORD CONNECT™ . You will have to show it to the courrier that we will send to deliver your free sample at the delivery</p>
-                    </div>
-                    <!-- END SINGLE DESC -->
-                    <!-- SINGLE DESC -->
-                    <div class="single_about_area fadeInUp wow" data-wow-duration=".5s" data-wow-delay="1.5s">
-                        <!-- ICON -->
-                        <div><i class="pe-7s-home"></i></div>
-                        <!-- HEADING DESCRIPTION -->
-                        <h3>Live in a city with more than 5000 inhabitant</h3>
-                        <p>We are really sorry, but we will have to organize the delivery and it will be very difficult to make it in smaller cities or villages not covered by the courrier company.</p>
-                    </div>
-                    <!-- END SINGLE DESC -->
-                    <!-- SINGLE DESC -->
-                    <div class="single_about_area fadeInUp wow" data-wow-duration=".5s" data-wow-delay="2s">
-                        <!-- ICON -->
-                        <div><i class="pe-7s-like2"></i></div>
-                        <!-- HEADING DESCRIPTION -->
-                        <h3>Share the Facebook post with all your friends</h3>
-                        <p>We are sure you want to let all your friends know about this excellent opportunity to get a free, high quality product.</p>
-                    </div>
-                    <!-- END SINGLE DESC -->
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="video_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 wow fadeInLeftBig">
-                    <!-- VIDEO LEFT TITLE -->
-                    <div class="video_title">
-                        <h2>UPGRADE TO  <br>GEL HYDRATION</h2>
-                        <p>TO HYDRATE SKIN THROUGHOUT EACH SHAVE AND PROTECT IT AGAINST IRRITATION</p>
-                    </div>
-                    <div class="video-button">
-                        <!-- BUTTON -->
-                        <a class="btn btn-primary btn-video" href="#FEATURES" role="button">Features</a>
-                    </div>
-                </div>
-                <div class="col-md-6 wow fadeInRightBig">
-                    <!-- VIDEO -->
-                    <div class="video">
-                        <video width="560" height="400" controls>
-                            <source src="images/movie.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End About Us -->
 <!-- =========================
      START FEATURES
 ============================== -->
@@ -232,7 +158,7 @@
                 <div class="col-md-4">
                     <div class="feature_iphone">
                         <!-- FEATURE PHONE IMAGE -->
-                        <img class="wow bounceIn" data-wow-duration="1s" src="images/hydro_features.jpg" alt="">
+                        <img class="wow bounceIn squeezing" data-wow-duration="1s" src="images/hydro_features.png" alt="">
                     </div>
                 </div>
                 <div class="col-md-4 left_no_padding wow fadeInRight" data-wow-duration="1s">
@@ -264,6 +190,151 @@
 </section>
 <!-- END FEATURES SECTION -->
 <!-- =========================
+     Start PRODUCT SECTION
+============================== -->
+<section class="apps_screen page" id="PRODUCT">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 wow fadeInBig" data-wow-duration="1s">
+                <!-- APPS SCREEN TITLE -->
+                <div class="section_title">
+                    <h2>Product</h2>
+                    <p>HYDRO CONNECT™ 5 CARTRIDGE IS COMPATIBLE WITH ALL GILLETTE® FUSION®† AND WILKINSON SWORD CONNECT™ 5 BRANDED HANDLES<br>You can find HYDRO CONNECT™ 5 in Kaufland, DM, Lilly, Metro and many more stores.</p>
+                </div>
+                <!-- END APPS SCREEN TITLE -->
+            </div>
+        </div>
+    </div>
+
+    <div class="screen_slider">
+        <div id="demo" class="wow bounceInRight" data-wow-duration="2s">
+            <div id="owl-demo" class="owl-carousel">
+
+                <!-- APPS SCREEN IMAGES -->
+                <div class="item">
+                    <img src="images/pic2.png" data-toggle="popover" title="Wilkinson Sword Hydro Connect™ 5 Cardridge 2-pieces" width="50" height="50" alt="Hydro" />
+                </div>
+                <div class="item">
+                    <img src="images/pic1.png" data-toggle="popover" title="Wilkinson Sword Hydro Connect™ 5 Razor" width="50" height="50" alt="Hydro" />
+                </div>
+                <div class="item">
+                    <img src="images/pic3.png" data-toggle="popover" title="Wilkinson Sword Hydro Connect™ 5 Cardridge 4-pieces" width="50" height="50" alt="Hydro" />
+                </div>
+                <div class="item">
+                    <img src="images/pic1.png" data-toggle="popover" title="Wilkinson Sword Hydro Connect™ 5 Razor" width="50" height="50" alt="Hydro" />
+                </div>
+                <div class="item">
+                    <img src="images/pic5.png" data-toggle="popover" title="Wilkinson Sword Hydro Connect™ 5 Sensitive Cardrige 4-pieces" width="50" height="50" alt="Hydro" />
+                </div>
+                <div class="item">
+                    <img src="images/pic4.png" data-toggle="popover" title="Wilkinson Sword Hydro Connect™ 5 Sensitive Razor" width="50" height="50" alt="Hydro" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ENS PRODUCT -->
+<!-- =========================
+     START CONDITIONS US SECTION
+============================== -->
+
+
+<section class="about page">
+    <div class="video_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 wow fadeInLeftBig">
+                    <!-- VIDEO LEFT TITLE -->
+                    <div class="video_title">
+                        <h2>UPGRADE TO  <br>GEL HYDRATION</h2>
+                        <p>TO HYDRATE SKIN THROUGHOUT EACH SHAVE AND PROTECT IT AGAINST IRRITATION</p>
+                    </div>
+                    <div class="video-button">
+                        <!-- BUTTON -->
+                        <a class="btn btn-primary btn-video" href="#FEATURES" role="button">Features</a>
+                    </div>
+                </div>
+                <div class="col-md-6 wow fadeInRightBig">
+                    <!-- VIDEO -->
+                    <div class="video">
+                        <video width="560" height="400" controls>
+                            <source src="images/movie.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about page" id="CONDITIONS">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+                <!-- ABOUT US SECTION TITLE-->
+                <div class="section_title">
+                    <h2>How can you get a FREE SAMPLE of Wilkinson Sword Hydro Connect&trade; 5?</h2>
+                    <p style="font-size: 16px">In Wilkinson Sword we firmly believe in the quality of all our products. We also know it is always difficult to make the first step and try something completely new. That is why we would like to give you an opportunity to try the new Wilkinson Sword Hydro Connect&trade; 5 FREE OF CHARGE.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="inner_about_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="about_phone wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+                        <!-- PHONE -->
+                        <img class="squeezing" src="images/blade.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-8  wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
+                    <!-- TITLE -->
+                    <div class="inner_about_title">
+                        <h3 style="margin-top: 0px; margin-bottom: 20px">To get the sample you must meet 3 simple requirements:</h3>
+                        <!--<p>You have to comply with the following 3 conditions to get absolutely free Hydro Connect5&trade; blade sample delivered right to your door.</p>-->
+                    </div>
+                    <div class="inner_about_desc">
+
+                        <!-- SINGLE DESC -->
+                        <div class="single_about_area fadeInUp wow" data-wow-duration=".5s" data-wow-delay="1s">
+                            <!-- ICON -->
+                            <div><i class="pe-7s-link"></i></div>
+                            <!-- HEADING DESCRIPTION -->
+                            <h4>Have a compatible handle with Wilkinson Sword Hydro Connect&trade; 5 cartridge*.</h4>
+                            <p>You will have to show it to the courier when the sample is delivered to you. Besides, why would you need the cartridge if you cannot use it? <img src="images/smyle.png" width="20px" style="padding-bottom: 7px" /></p>
+                        </div>
+                        <!-- END SINGLE DESC -->
+                        <!-- SINGLE DESC -->
+                        <div class="single_about_area fadeInUp wow" data-wow-duration=".5s" data-wow-delay="1s">
+                            <!-- ICON -->
+                            <div><i class="pe-7s-like2"></i></div>
+                            <!-- HEADING DESCRIPTION -->
+                            <h4>Follow our Facebook profile and share the post about Wilkinson Sword Hydro Connect&trade; 5 sampling.</h4>
+                            <p>We would like you to be up-to-date with any future promotions and novelties we will launch. It is also good if you let your family and friends know about this unique opportunity – why keep it to yourself?</p>
+                        </div>
+                        <!-- END SINGLE DESC -->
+                        <!-- SINGLE DESC -->
+                        <div class="single_about_area fadeInUp wow" data-wow-duration=".5s" data-wow-delay="1s">
+                            <!-- ICON -->
+                            <div><i class="pe-7s-home"></i></div>
+                            <!-- HEADING DESCRIPTION -->
+                            <h4>Live in a city with more than 5000 inhabitants</h4>
+                            <p>We are very sorry, but we are unable to deliver the gifts to smaller towns or villages.Maybe you know someone we could deliver the sample to? Let him know about this promotion!</p>
+                        </div>
+                        <!-- END SINGLE DESC -->
+                        <p><small><i>* HYDRO CONNECT™ 5 CARTRIDGE IS COMPATIBLE WITH ALL GILLETTE® FUSION®† AND WILKINSON SWORD CONNECT™ BRANDED HANDLES</small></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+<!-- End About Us -->
+<!-- =========================
      START CALL TO ACTION
 ============================== -->
 <!--<div class="call_to_action">
@@ -280,52 +351,6 @@
 </div>-->
 <!-- END CALL TO ACTION -->
 <!-- =========================
-     Start APPS SCREEN SECTION
-============================== -->
-<section class="apps_screen page" id="SCREENS">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1 wow fadeInBig" data-wow-duration="1s">
-                <!-- APPS SCREEN TITLE -->
-                <div class="section_title">
-                    <h2>Compatibility</h2>
-                    <p>HYDRO CONNECT™ 5 CARTRIDGE IS COMPATIBLE WITH ALL GILLETTE® FUSION®† AND WILKINSON SWORD CONNECT™ BRANDED HANDLES</p>
-                </div>
-                <!-- END APPS SCREEN TITLE -->
-            </div>
-        </div>
-    </div>
-
-    <div class="screen_slider">
-        <div id="demo" class="wow bounceInRight" data-wow-duration="1s">
-            <div id="owl-demo" class="owl-carousel">
-
-                <!-- APPS SCREEN IMAGES -->
-                <div class="item">
-                    <img src="images/razor1.png" width="60" height="60" alt="APPS SCREEN" />
-                </div>
-                <div class="item">
-                    <img src="images/razor2.png" width="60" height="60" alt="APPS SCREEN" />
-                </div>
-                <div class="item">
-                    <img src="images/razor3.png" width="60" height="60" alt="APPS SCREEN" />
-                </div>
-                <div class="item">
-                    <img src="images/razor1.png" width="60" height="60" alt="APPS SCREEN" />
-                </div>
-                <div class="item">
-                    <img src="images/razor2.png" width="60" height="60" alt="APPS SCREEN" />
-                </div>
-                <div class="item">
-                    <img src="images/razor3.png" width="60" height="60" alt="APPS SCREEN" />
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ENS APPS SCREEN -->
-<!-- =========================
      START CONTCT FORM AREA
 ============================== -->
 <section class="contact page" id="CONTACT">
@@ -334,7 +359,7 @@
             <div class="col-md-10 col-md-offset-1 wow bounceIn">
                 <!-- Start Contact Section Title-->
                 <div class="section_title">
-                    <h2>Request a free sample</h2>
+                    <h2>REQUEST A FREE SAMPLE</h2>
                     <p>We will deliver the free sample right to your door, through a courier agency. Just make sure you comply with the three conditions above and send us the detailes needed to send you the free Hydro Connect5&trade; Blade</p>
                 </div>
             </div>
@@ -349,6 +374,7 @@
                     <div class="email_error hide error">Please Enter your Email</div>
                     <div class="email_val_error hide error">Please Enter a Valid Email Address</div>
                     <div class="message_error hide error">Please Enter Your Address</div>
+                    <div class="policy_error hide error">Please Read and Check Policy Agreement</div>
                 </div>
                 <div class="Sucess"></div>
                 <!-- END ERROR AND SUCCESS MESSAGE -->
@@ -370,6 +396,8 @@
 
                         <div class="col-md-8">
                             <textarea class="form-control" id="message" rows="25" cols="10" placeholder="  Address..."></textarea>
+                            <input type="checkbox" class="form-check-input" id="policy">
+                            <label class="form-check-label" for="policy">You have read and understood our <a href="english_pol.html" target="_blank">privacy policy</a></label>
                             <button type="button" class="btn btn-default submit-btn form_submit">Request Free Sample</button>
                         </div>
                     </div>
