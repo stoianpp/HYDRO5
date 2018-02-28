@@ -219,6 +219,7 @@ p {
     color: white;
 }
 
+
 @media (min-width: 768px) and (max-width: 990px) {
     .fits_text{
         margin-left: 25px;
@@ -248,8 +249,11 @@ p {
         margin-right: auto;
     }
 }
-
-
+@media (max-width: 400px) {
+    #nav-button {
+        float: left !important;
+    }
+}
 @media (max-width: 768px){
     .fits_text{
         /*color: black;*/
