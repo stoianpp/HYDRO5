@@ -21,7 +21,7 @@
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <button type="button" class="navbar-toggle collapsed" id="nav-button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -52,12 +52,12 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <!-- NAV -->
-                        <li><a href="#HOME">HOME</a> </li>
-                        <li><a href="#FEATURES">FEATURES</a></li>
-                        <li><a href="#PRODUCT">PRODUCT</a> </li>
-                        <li><a href="#CONDITIONS">CONDITIONS </a> </li>
+                        <li><a href="#HOME">@Resource.Home</a> </li>
+                        <li><a href="#FEATURES">@Resource.Features</a></li>
+                        <li><a href="#PRODUCT">@Resource.Product</a> </li>
+                        <li><a href="#CONDITIONS">@Resource.Conditions </a> </li>
                         <!--<li><a href="#DOWNLOAD">DOWNLOAD </a> </li>-->
-                        <li><a href="#CONTACT">SAMPLE </a> </li>
+                        <li><a href="#CONTACT">@Resource.Sample </a> </li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -70,7 +70,7 @@
                 <div class="col-md-12">
                     <div class="logo text-center">
                         <br>
-                        <img width="268" height="156" src="images/SWSlogo.png" alt="">
+                        <img width="268" height="156" id="img-logo" src="images/SWSlogo.png" alt="">
                     </div>
                 </div>
             </div>
@@ -78,12 +78,12 @@
                 <div class="col-md-7 col-sm-7">
                     <div class="home_text">
                         <!-- TITLE AND DESC -->
-                        <p class="land-header-text inner-line">Upgrade to GEL HYDRATION<br>to hydrate skin throughout each shave</p>
-                        <p style="margin-top: 25px; text-align: justify;">Did you know that the new Wilkinson Sword Hydro Connect™ 5 cartridge is compatible with all Fusion®† and Wilkinson Sword Hydro Connect™ 5 branded handles? This gives you the freedom to choose what blades to use with your preffered razor before you decide to change it.<br>Now we give you the opportunity to receive a FREE SAMPLE so you can test all the benefits of Wilkinson Sword Hydro Connect™ 5 blades on your own skin! </p>
-                        <p style="font-size: 16px; line-height: 20px !important; margin-top: 20px">FIND OUT HOW TO GET YOUR FREE SAMPLE BELOW.<br>DON'T LET THEM TELL YOU WHAT IS THE BEST A MAN CAN GET - CHOOSE YOURSELF!</p>
+                        <p class="land-header-text inner-line">@Resource.HidratePart1<br>@Resource.HidratePart2</p>
+                        <p style="margin-top: 25px; text-align: justify;">@Resource.HeaderText1<br>@Resource.HeaderText2 </p>
+                        <p style="font-size: 16px; line-height: 20px !important; margin-top: 20px">@Resource.FindSample<br>@Resource.DoNotLet</p>
 
                         <div class="download-btn">
-                            <a class="btn home-btn wow fadeInLeft" href="#CONDITIONS">CHECK THE CONDITIONS</a>
+                            <a class="btn home-btn wow fadeInLeft" href="#CONDITIONS">@Resource.CheckConditions</a>
                         </div>
                     </div>
                 </div>
@@ -94,11 +94,11 @@
                             <div>
                             </div>
                         </div>
-                        <div class="col-md-offset-2">
-                            <p class="fits_text"><br>FITS FUSION®† HANDLES**</p>
+                        <div">
+                            <p class="fits_text"><br>@Resource.FitsFusionHandle</p>
                         </div>
                         <div>
-                            <p class="connect">CONNECT THE UNEXPECTED</p>
+                            <p class="connect">@Resource.ConnectTheUnexpected</p>
                         </div>
                         <div>
                             <img src="images/text.png" style="margin-top: 15px; width: 100%" alt="">

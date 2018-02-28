@@ -70,6 +70,42 @@ namespace HydroAsp.LocalResource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CHECK THE CONDITIONS.
+        /// </summary>
+        public static string CheckConditions {
+            get {
+                return ResourceManager.GetString("CheckConditions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Conditions.
+        /// </summary>
+        public static string Conditions {
+            get {
+                return ResourceManager.GetString("Conditions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CONNECT THE UNEXPECTED.
+        /// </summary>
+        public static string ConnectTheUnexpected {
+            get {
+                return ResourceManager.GetString("ConnectTheUnexpected", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DON&apos;T LET THEM TELL YOU WHAT IS THE BEST A MAN CAN GET - CHOOSE YOURSELF!.
+        /// </summary>
+        public static string DoNotLet {
+            get {
+                return ResourceManager.GetString("DoNotLet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to English.
         /// </summary>
         public static string En {
@@ -79,11 +115,74 @@ namespace HydroAsp.LocalResource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to СЪВМЕСТИМИ С FUSION®† ДРЪЖКИ**.
+        ///   Looks up a localized string similar to Features.
+        /// </summary>
+        public static string Features {
+            get {
+                return ResourceManager.GetString("Features", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FIND OUT HOW TO GET YOUR FREE SAMPLE BELOW..
+        /// </summary>
+        public static string FindSample {
+            get {
+                return ResourceManager.GetString("FindSample", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FITS FUSION®† HANDLES**.
         /// </summary>
         public static string FitsFusionHandle {
             get {
                 return ResourceManager.GetString("FitsFusionHandle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Did you know that the new Wilkinson Sword Hydro Connect™ 5 cartridge is compatible with all Fusion®† and Wilkinson Sword Hydro Connect™ 5 branded handles? This gives you the freedom to choose what blades to use with your preffered razor before you decide to change it..
+        /// </summary>
+        public static string HeaderText1 {
+            get {
+                return ResourceManager.GetString("HeaderText1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Now we give you the opportunity to receive a FREE SAMPLE so you can test all the benefits of Wilkinson Sword Hydro Connect™ 5 blades on your own skin!.
+        /// </summary>
+        public static string HeaderText2 {
+            get {
+                return ResourceManager.GetString("HeaderText2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Upgrade to GEL HYDRATION.
+        /// </summary>
+        public static string HidratePart1 {
+            get {
+                return ResourceManager.GetString("HidratePart1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to to hydrate skin throughout each shave.
+        /// </summary>
+        public static string HidratePart2 {
+            get {
+                return ResourceManager.GetString("HidratePart2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Home.
+        /// </summary>
+        public static string Home {
+            get {
+                return ResourceManager.GetString("Home", resourceCulture);
             }
         }
         
@@ -93,6 +192,24 @@ namespace HydroAsp.LocalResource {
         public static string Language {
             get {
                 return ResourceManager.GetString("Language", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Product.
+        /// </summary>
+        public static string Product {
+            get {
+                return ResourceManager.GetString("Product", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sample.
+        /// </summary>
+        public static string Sample {
+            get {
+                return ResourceManager.GetString("Sample", resourceCulture);
             }
         }
     }

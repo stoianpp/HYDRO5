@@ -120,13 +120,52 @@
   <data name="Bg" xml:space="preserve">
     <value>Български</value>
   </data>
+  <data name="CheckConditions" xml:space="preserve">
+    <value>ПРОВЕРЕТЕ УСЛОВИЯТА</value>
+  </data>
+  <data name="Conditions" xml:space="preserve">
+    <value>Условия</value>
+  </data>
+  <data name="ConnectTheUnexpected" xml:space="preserve">
+    <value>Неочаквана връзка</value>
+  </data>
+  <data name="DoNotLet" xml:space="preserve">
+    <value>НЕ ПОЗВОЛЯВАЙТЕ НА НИКОГО ДА ВИ КАЗВА, КОЕ Е НАЙ-ДОБРОТО ЗА МЪЖА - ИЗБЕРЕТЕ САМИ!</value>
+  </data>
   <data name="En" xml:space="preserve">
     <value>Английски</value>
+  </data>
+  <data name="Features" xml:space="preserve">
+    <value>Предимства</value>
+  </data>
+  <data name="FindSample" xml:space="preserve">
+    <value>РАЗБЕРЕТЕ КАК ДА ПОЛУЧИТЕ ВАШАТА БЕЗПЛАТНА МОСТРА ПО-ДОЛУ</value>
   </data>
   <data name="FitsFusionHandle" xml:space="preserve">
     <value>СЪВМЕСТИМИ С FUSION®† ДРЪЖКИ**</value>
   </data>
+  <data name="HeaderText1" xml:space="preserve">
+    <value>Знаете ли, че новите Wilkinson Sword Hydro Connect™ 5 ножчета са съвместими с всички Fusion®† и Wilkinson Sword Hydro Connect™ 5 системи? Това ви дава свободата да избирате, какви ножчета да използвате с вашата предпочитана дръжка, преди да решите да я смените.</value>
+  </data>
+  <data name="HeaderText2" xml:space="preserve">
+    <value>Сега имате възможност да получите БЕЗПЛАТНА МОСТРА, за да тествате всички характеристика на ножчетата Wilkinson Sword Hydro Connect™ 5 върху вашата кожа!</value>
+  </data>
+  <data name="HidratePart1" xml:space="preserve">
+    <value>Преминете към ГЕЛ ХИДРАТАЦИЯ</value>
+  </data>
+  <data name="HidratePart2" xml:space="preserve">
+    <value>за хидратирана кожа при всяко бръснене</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Начало</value>
+  </data>
   <data name="Language" xml:space="preserve">
     <value>Език</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>Продукти</value>
+  </data>
+  <data name="Sample" xml:space="preserve">
+    <value>Мостра</value>
   </data>
 </root>

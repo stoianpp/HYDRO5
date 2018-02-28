@@ -193,12 +193,13 @@ p {
     font-weight: 300;
     /*padding-right: 50px;*/
 }
-.fits_text{
-    margin-left: 25px;
+.fits_text {
+    /*margin-left: 25px;*/
     color: #fff;
     font-size: 23px !important;
     font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
-    margin-top: 180px
+    margin-top: 180px;
+    text-align: center;
 }
 
 .inner-line{
@@ -211,7 +212,7 @@ p {
     color: #f39c12;
     text-align: center;
     line-height: 50px;
-    margin-left: -30px;
+    /*margin-left: -30px;*/
 }
 
 .transparent-lang, .transparent-lang li a {
@@ -222,7 +223,7 @@ p {
 
 @media (min-width: 768px) and (max-width: 990px) {
     .fits_text{
-        margin-left: 25px;
+        /*margin-left: 25px;*/
         font-size: 23px !important;
         text-align: center;
         font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
@@ -255,9 +256,9 @@ p {
     }
 }
 @media (max-width: 768px){
-    .fits_text{
-        /*color: black;*/
-        margin-left: 25px;
+    .fits_text {
+        /*color: black;
+        margin-left: 25px;*/
         font-size: 23px !important;
         text-align: center;
         font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;

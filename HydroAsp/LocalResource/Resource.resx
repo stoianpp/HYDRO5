@@ -120,13 +120,52 @@
   <data name="Bg" xml:space="preserve">
     <value>Bulgarian</value>
   </data>
+  <data name="CheckConditions" xml:space="preserve">
+    <value>CHECK THE CONDITIONS</value>
+  </data>
+  <data name="Conditions" xml:space="preserve">
+    <value>Conditions</value>
+  </data>
+  <data name="ConnectTheUnexpected" xml:space="preserve">
+    <value>CONNECT THE UNEXPECTED</value>
+  </data>
+  <data name="DoNotLet" xml:space="preserve">
+    <value>DON'T LET THEM TELL YOU WHAT IS THE BEST A MAN CAN GET - CHOOSE YOURSELF!</value>
+  </data>
   <data name="En" xml:space="preserve">
     <value>English</value>
   </data>
+  <data name="Features" xml:space="preserve">
+    <value>Features</value>
+  </data>
+  <data name="FindSample" xml:space="preserve">
+    <value>FIND OUT HOW TO GET YOUR FREE SAMPLE BELOW.</value>
+  </data>
   <data name="FitsFusionHandle" xml:space="preserve">
-    <value>СЪВМЕСТИМИ С FUSION®† ДРЪЖКИ**</value>
+    <value>FITS FUSION®† HANDLES**</value>
+  </data>
+  <data name="HeaderText1" xml:space="preserve">
+    <value>Did you know that the new Wilkinson Sword Hydro Connect™ 5 cartridge is compatible with all Fusion®† and Wilkinson Sword Hydro Connect™ 5 branded handles? This gives you the freedom to choose what blades to use with your preffered razor before you decide to change it.</value>
+  </data>
+  <data name="HeaderText2" xml:space="preserve">
+    <value>Now we give you the opportunity to receive a FREE SAMPLE so you can test all the benefits of Wilkinson Sword Hydro Connect™ 5 blades on your own skin!</value>
+  </data>
+  <data name="HidratePart1" xml:space="preserve">
+    <value>Upgrade to GEL HYDRATION</value>
+  </data>
+  <data name="HidratePart2" xml:space="preserve">
+    <value>to hydrate skin throughout each shave</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
   </data>
   <data name="Language" xml:space="preserve">
     <value>Language</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="Sample" xml:space="preserve">
+    <value>Sample</value>
   </data>
 </root>
