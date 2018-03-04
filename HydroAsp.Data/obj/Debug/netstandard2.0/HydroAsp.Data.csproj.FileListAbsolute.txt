@@ -1,0 +1,6 @@
+C:\Users\stoia\Source\repos\HydroRepo\HydroAsp.Data\bin\Debug\netstandard2.0\HydroAsp.Data.deps.json
+C:\Users\stoia\Source\repos\HydroRepo\HydroAsp.Data\bin\Debug\netstandard2.0\HydroAsp.Data.dll
+C:\Users\stoia\Source\repos\HydroRepo\HydroAsp.Data\obj\Debug\netstandard2.0\HydroAsp.Data.csprojResolveAssemblyReference.cache
+C:\Users\stoia\Source\repos\HydroRepo\HydroAsp.Data\obj\Debug\netstandard2.0\HydroAsp.Data.csproj.CoreCompileInputs.cache
+C:\Users\stoia\Source\repos\HydroRepo\HydroAsp.Data\obj\Debug\netstandard2.0\HydroAsp.Data.AssemblyInfoInputs.cache
+C:\Users\stoia\Source\repos\HydroRepo\HydroAsp.Data\obj\Debug\netstandard2.0\HydroAsp.Data.AssemblyInfo.cs

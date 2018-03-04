@@ -29,8 +29,12 @@ namespace HydroAsp.Modules
                 {
                     case "bg": Thread.CurrentThread.CurrentUICulture = new CultureInfo("bg-BG"); break;
                     case "en": Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-GB"); break;
-                    default:; break;
+                    default: ; break;
                 }
+            }
+            else
+            {
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo("bg-BG");
             }
         }
     }

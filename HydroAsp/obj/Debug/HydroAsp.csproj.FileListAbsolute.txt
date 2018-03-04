@@ -148,3 +148,8 @@ C:\Users\stoia\Source\repos\HydroRepo\HydroAsp\obj\Debug\en-GB\HydroAsp.resource
 C:\Users\stoia\Source\repos\HydroRepo\HydroAsp\obj\Debug\HydroAsp.LocalResource.Resource.resources
 C:\Users\stoia\Source\repos\HydroRepo\HydroAsp\obj\Debug\HydroAsp.LocalResource.Resource.en-GB.resources
 C:\Users\stoia\Source\repos\HydroRepo\HydroAsp\obj\Debug\HydroAsp.LocalResource.Resource.bg-BG.resources
+C:\Users\stoia\Source\repos\HydroRepo\HydroAsp\bin\Ninject.dll
+C:\Users\stoia\Source\repos\HydroRepo\HydroAsp\bin\Ninject.xml
+C:\Users\stoia\Source\repos\HydroRepo\HydroAsp\bin\Data.dll
+C:\Users\stoia\Source\repos\HydroRepo\HydroAsp\bin\Data.pdb
+C:\Users\stoia\Source\repos\HydroRepo\HydroAsp\bin\Data.dll.config

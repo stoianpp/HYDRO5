@@ -6,6 +6,8 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
 using HydroAsp.Models;
+using Data;
+using Data.Models;
 
 namespace HydroAsp
 {

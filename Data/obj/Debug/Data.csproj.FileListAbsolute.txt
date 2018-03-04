@@ -1,0 +1,15 @@
+C:\Users\stoia\Source\repos\HydroRepo\Data\bin\Debug\Data.dll.config
+C:\Users\stoia\Source\repos\HydroRepo\Data\bin\Debug\Data.dll
+C:\Users\stoia\Source\repos\HydroRepo\Data\bin\Debug\Data.pdb
+C:\Users\stoia\Source\repos\HydroRepo\Data\bin\Debug\EntityFramework.dll
+C:\Users\stoia\Source\repos\HydroRepo\Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\stoia\Source\repos\HydroRepo\Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\stoia\Source\repos\HydroRepo\Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\stoia\Source\repos\HydroRepo\Data\bin\Debug\EntityFramework.xml
+C:\Users\stoia\Source\repos\HydroRepo\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\stoia\Source\repos\HydroRepo\Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\stoia\Source\repos\HydroRepo\Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\stoia\Source\repos\HydroRepo\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\stoia\Source\repos\HydroRepo\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Users\stoia\Source\repos\HydroRepo\Data\obj\Debug\Data.dll
+C:\Users\stoia\Source\repos\HydroRepo\Data\obj\Debug\Data.pdb
