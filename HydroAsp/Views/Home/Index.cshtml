@@ -28,7 +28,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <img src="images/logo3.png" alt="Logo">
+                        <img src="~/images/logo3.png" alt="Logo">
                     </a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -36,19 +36,19 @@
                     <ul class="nav navbar-nav navbar-left" style="padding-left: 20px">
                         @{
                             CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
-
-                            <!--<li><a href="/Home/ChangeCurrentCulture/0"><img src="images/UK.png" /> En</a></li>
-                                <li><a href="/Home/ChangeCurrentCulture/1"><img src="images/BG.png" /> Bg</a></li>-->
                         }
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">@Resource.Language<span class="caret"></span></a>
                             <ul class="dropdown-menu transparent-lang" role="menu">
-                                <li><a href="/Home/ChangeCurrentCulture/0" class="language" rel="en-US"><img src="images/UK.png" alt="English" /> @Resource.En</a></li>
-                                <li><a href="/Home/ChangeCurrentCulture/1" class="language" rel="bg-BG"><img src="images/BG.png" alt="Bulgarian" /> @Resource.Bg</a></li>
+                                <li><a href="~/en" class="language" rel="en-US"><img src="~/images/UK.png" alt="English" /> @Resource.En</a></li>
+                                <li><a href="~/bg" class="language" rel="bg-BG"><img src="~/images/BG.png" alt="Bulgarian" /> @Resource.Bg</a></li>
+                                <!--
+                                    <li><a href="/Home/ChangeCurrentCulture/0" class="language" rel="en-US"><img src="images/UK.png" alt="English" /> @Resource.En</a></li>
+                                    <li><a href="/Home/ChangeCurrentCulture/1" class="language" rel="bg-BG"><img src="images/BG.png" alt="Bulgarian" /> @Resource.Bg</a></li>
+                                -->
                             </ul>
                         </li>
-                        <!--<li><a href="#"><img src="images/UK.png" /> En</a></li>
-                        <li><a href="#"><img src="images/BG.png" /> Bg</a></li>-->
+
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <!-- NAV -->
@@ -64,49 +64,48 @@
             </div>
             <!-- /.container- -->
         </nav>
-        </div>
-        <div class="container home-container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="logo text-center">
-                        <br>
-                        <img width="268" height="156" id="img-logo" src="images/SWSlogo.png" alt="">
-                    </div>
+    </div>
+    <div class="container home-container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="logo text-center">
+                    <br>
+                    <img width="268" height="156" id="img-logo" src="~/images/SWSlogo.png" alt="">
                 </div>
             </div>
-            <div class="row back-color-sm">
-                <div class="col-md-7 col-sm-7">
-                    <div class="home_text">
-                        <!-- TITLE AND DESC -->
-                        <p class="land-header-text inner-line">@Resource.HidratePart1<br>@Resource.HidratePart2</p>
-                        <p style="margin-top: 25px; text-align: justify;">@Resource.HeaderText1<br>@Resource.HeaderText2 </p>
-                        <p style="font-size: 16px; line-height: 20px !important; margin-top: 20px">@Resource.FindSample<br>@Resource.DoNotLet</p>
+        </div>
+        <div class="row back-color-sm">
+            <div class="col-md-7 col-sm-7">
+                <div class="home_text">
+                    <!-- TITLE AND DESC -->
+                    <p class="land-header-text inner-line">@Resource.HidratePart1<br>@Resource.HidratePart2</p>
+                    <p style="margin-top: 25px; text-align: justify;">@Resource.HeaderText1<br>@Resource.HeaderText2 </p>
+                    <p style="font-size: 16px; line-height: 20px !important; margin-top: 20px">@Resource.FindSample<br>@Resource.DoNotLet</p>
 
-                        <div class="download-btn">
-                            <a class="btn home-btn wow fadeInLeft" href="#CONDITIONS">@Resource.CheckConditions</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5 col-sm-5 back-color-sm">
-                    <div class="row uplift">
-                        <div class="col-md-5 col-md-offset-3">
-                            <img class="handle-image" src="images/Handle.png" alt="">
-                            <div>
-                            </div>
-                        </div>
-                        <div">
-                            <p class="fits_text"><br>@Resource.FitsFusionHandle</p>
-                        </div>
-                        <div>
-                            <p class="connect">@Resource.ConnectTheUnexpected</p>
-                        </div>
-                        <div>
-                            <img src="images/text.png" style="margin-top: 15px; width: 100%" alt="">
-                        </div>
+                    <div class="download-btn">
+                        <a class="btn home-btn wow fadeInLeft" href="#CONDITIONS">@Resource.CheckConditions</a>
                     </div>
                 </div>
             </div>
+            <div class="col-md-5 col-sm-5 back-color-sm">
+                <div class="row uplift">
+                    <div class="col-md-5 col-md-offset-3">
+                        <img class="handle-image" src="~/images/Handle.png" alt="">
+                        <div>
+                        </div>
+                    </div>
+                    <div">
+                        <p class="fits_text"><br>@Resource.FitsFusionHandle</p>
+                </div>
+                <div>
+                    <p class="connect">@Resource.ConnectTheUnexpected</p>
+                </div>
+                <div>
+                    <img src="images/text.png" style="margin-top: 15px; width: 100%" alt="">
+                </div>
+            </div>
         </div>
+    </div>
 </section>
 
 <!-- END HEADER SECTION -->
@@ -158,7 +157,7 @@
                 <div class="col-md-4">
                     <div class="feature_iphone">
                         <!-- FEATURE PHONE IMAGE -->
-                        <img class="wow bounceIn squeezing" data-wow-duration="1s" src="images/hydro_features.png" alt="">
+                        <img class="wow bounceIn squeezing" data-wow-duration="1s" src="~/images/hydro_features.png" alt="">
                     </div>
                 </div>
                 <div class="col-md-4 left_no_padding wow fadeInRight" data-wow-duration="1s">
@@ -212,22 +211,22 @@
 
                 <!-- APPS SCREEN IMAGES -->
                 <div class="item">
-                    <img src="images/pic2.png" data-toggle="popover" title="Wilkinson Sword Hydro Connect™ 5 Cardridge 2-pieces" width="50" height="50" alt="Hydro" />
+                    <img src="~/images/pic2.png" data-toggle="popover" title="Wilkinson Sword Hydro Connect™ 5 Cardridge 2-pieces" width="50" height="50" alt="Hydro" />
                 </div>
                 <div class="item">
-                    <img src="images/pic1.png" data-toggle="popover" title="Wilkinson Sword Hydro Connect™ 5 Razor" width="50" height="50" alt="Hydro" />
+                    <img src="~/images/pic1.png" data-toggle="popover" title="Wilkinson Sword Hydro Connect™ 5 Razor" width="50" height="50" alt="Hydro" />
                 </div>
                 <div class="item">
-                    <img src="images/pic3.png" data-toggle="popover" title="Wilkinson Sword Hydro Connect™ 5 Cardridge 4-pieces" width="50" height="50" alt="Hydro" />
+                    <img src="~/images/pic3.png" data-toggle="popover" title="Wilkinson Sword Hydro Connect™ 5 Cardridge 4-pieces" width="50" height="50" alt="Hydro" />
                 </div>
                 <div class="item">
-                    <img src="images/pic1.png" data-toggle="popover" title="Wilkinson Sword Hydro Connect™ 5 Razor" width="50" height="50" alt="Hydro" />
+                    <img src="~/images/pic1.png" data-toggle="popover" title="Wilkinson Sword Hydro Connect™ 5 Razor" width="50" height="50" alt="Hydro" />
                 </div>
                 <div class="item">
-                    <img src="images/pic5.png" data-toggle="popover" title="Wilkinson Sword Hydro Connect™ 5 Sensitive Cardrige 4-pieces" width="50" height="50" alt="Hydro" />
+                    <img src="~/images/pic5.png" data-toggle="popover" title="Wilkinson Sword Hydro Connect™ 5 Sensitive Cardrige 4-pieces" width="50" height="50" alt="Hydro" />
                 </div>
                 <div class="item">
-                    <img src="images/pic4.png" data-toggle="popover" title="Wilkinson Sword Hydro Connect™ 5 Sensitive Razor" width="50" height="50" alt="Hydro" />
+                    <img src="~/images/pic4.png" data-toggle="popover" title="Wilkinson Sword Hydro Connect™ 5 Sensitive Razor" width="50" height="50" alt="Hydro" />
                 </div>
             </div>
         </div>
@@ -259,7 +258,7 @@
                     <!-- VIDEO -->
                     <div class="video">
                         <video width="560" height="400" controls>
-                            <source src="images/movie.mp4" type="video/mp4">
+                            <source src="~/images/movie.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
@@ -286,7 +285,7 @@
                 <div class="col-md-4">
                     <div class="about_phone wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
                         <!-- PHONE -->
-                        <img class="squeezing" src="images/blade.png" alt="">
+                        <img class="squeezing" src="~/images/blade.png" alt="">
                     </div>
                 </div>
                 <div class="col-md-8  wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
@@ -303,7 +302,7 @@
                             <div><i class="pe-7s-link"></i></div>
                             <!-- HEADING DESCRIPTION -->
                             <h4>Have a compatible handle with Wilkinson Sword Hydro Connect&trade; 5 cartridge*.</h4>
-                            <p>You will have to show it to the courier when the sample is delivered to you. Besides, why would you need the cartridge if you cannot use it? <img src="images/smyle.png" width="20px" style="padding-bottom: 7px" /></p>
+                            <p>You will have to show it to the courier when the sample is delivered to you. Besides, why would you need the cartridge if you cannot use it? <img src="~/images/smyle.png" width="20" style="padding-bottom: 7px" /></p>
                         </div>
                         <!-- END SINGLE DESC -->
                         <!-- SINGLE DESC -->
@@ -324,7 +323,7 @@
                             <p>We are very sorry, but we are unable to deliver the gifts to smaller towns or villages.Maybe you know someone we could deliver the sample to? Let him know about this promotion!</p>
                         </div>
                         <!-- END SINGLE DESC -->
-                        <p><small><i>* HYDRO CONNECT™ 5 CARTRIDGE IS COMPATIBLE WITH ALL GILLETTE® FUSION®† AND WILKINSON SWORD CONNECT™ BRANDED HANDLES</small></i></p>
+                        <p><small><i>* HYDRO CONNECT™ 5 CARTRIDGE IS COMPATIBLE WITH ALL GILLETTE® FUSION®† AND WILKINSON SWORD CONNECT™ BRANDED HANDLES</i></small></p>
                     </div>
                 </div>
             </div>
@@ -397,7 +396,7 @@
                         <div class="col-md-8">
                             <textarea class="form-control" id="message" rows="25" cols="10" placeholder="  Address..."></textarea>
                             <input type="checkbox" class="form-check-input" id="policy">
-                            <label class="form-check-label" for="policy">You have read and understood our <a href="english_pol.html" target="_blank">privacy policy</a></label>
+                            <label class="form-check-label" for="policy">You have read and understood our <a href="#" target="_blank">privacy policy</a></label>
                             <button type="button" class="btn btn-default submit-btn form_submit">Request Free Sample</button>
                         </div>
                     </div>
