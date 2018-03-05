@@ -13,3 +13,6 @@ C:\Users\stoia\Source\repos\HydroRepo\Data\obj\Debug\Data.csprojResolveAssemblyR
 C:\Users\stoia\Source\repos\HydroRepo\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
 C:\Users\stoia\Source\repos\HydroRepo\Data\obj\Debug\Data.dll
 C:\Users\stoia\Source\repos\HydroRepo\Data\obj\Debug\Data.pdb
+C:\Users\stoia\Source\repos\HydroRepo\Data\obj\Debug\Data.Migrations.Initial.resources
+C:\Users\stoia\Source\repos\HydroRepo\Data\obj\Debug\Data.csproj.GenerateResource.Cache
+C:\Users\stoia\Source\repos\HydroRepo\Data\obj\Debug\Data.Migrations.CustomerUpdate.resources

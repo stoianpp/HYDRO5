@@ -54,14 +54,36 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationDbContext.cs" />
+    <Compile Include="Common\DbRepository{T}.cs" />
+    <Compile Include="Common\IDbRepository{T}.cs" />
+    <Compile Include="Migrations\201803051731363_Initial.cs" />
+    <Compile Include="Migrations\201803051731363_Initial.Designer.cs">
+      <DependentUpon>201803051731363_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803051813100_CustomerUpdate.cs" />
+    <Compile Include="Migrations\201803051813100_CustomerUpdate.Designer.cs">
+      <DependentUpon>201803051813100_CustomerUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
-    <Compile Include="Models\Countries.cs" />
+    <Compile Include="Models\BaseModel{TKey}.cs" />
+    <Compile Include="Models\Country.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\IAuditInfo.cs" />
+    <Compile Include="Models\IDeletableEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201803051731363_Initial.resx">
+      <DependentUpon>201803051731363_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803051813100_CustomerUpdate.resx">
+      <DependentUpon>201803051813100_CustomerUpdate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -12,6 +12,7 @@
     using Controllers;
 
     using Data;
+    using Data.Common;
     using Data.Models;
     using Microsoft.AspNet.Identity.EntityFramework;
     using Microsoft.AspNet.Identity.Owin;
@@ -73,10 +74,10 @@
           //      .As<IIdentifierProvider>()
           //      .InstancePerRequest();
           //
-          //  builder.RegisterGeneric(typeof(DbRepository<>))
-          //      .As(typeof(IDbRepository<>))
-          //      .InstancePerRequest();
-          //
+           builder.RegisterGeneric(typeof(DbRepository<>))
+               .As(typeof(IDbRepository<>))
+               .InstancePerRequest();
+           
           //  builder.RegisterAssemblyTypes(Assembly.GetExecutingAssembly())
           //      .AssignableTo<BaseController>().PropertiesAutowired();
         }
